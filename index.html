@@ -14,81 +14,110 @@
 <body>
 
     <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Splashes Logo" width="150">
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="lessons.html">Swimming Lessons</a></li>
-                <li><a href="swim-programs.html">Swim Programs</a></li>
-                <li><a href="adult-programs.html">Adult Programs</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo-small.png" alt="Splashes Logo" class="logo"> 
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Swimming Lessons</a></li>
+                    <li><a href="swim-programs.html">Swim Programs</a></li>
+                    <li><a href="adult-programs.html">Adult Programs</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
 
-        <div class="auth-buttons">
-            <button id="btn-register">Register / Sign In</button>
+            <div class="auth-buttons">
+                <button class="btn btn-primary" id="btn-register">Register / Sign In</button>
+            </div>
         </div>
     </header>
 
     <section id="hero">
-        <img src="images/hero-home.jpg" alt="Swimming Pool Background" style="width:100%; max-height:400px; object-fit:cover;">
+        <img src="images/home.jpeg" alt="Child swimming underwater" class="hero-image">
     </section>
 
     <main>
         
-        <section id="registration-banner" style="background-color: orange; text-align: center; padding: 20px;">
-            <h1>Register Online Here</h1>
+        <section class="banner-section">
+            <a href="#">
+                <img src="images/register-online-here-banner.png" alt="Register Online Here" class="responsive-banner">
+            </a>
         </section>
 
-        <section id="hiring-banner" style="text-align: center; padding: 20px;">
-            <img src="images/banner-hiring.jpg" alt="We Want You - Now Hiring Swim Instructors" style="width:100%; max-width: 800px;">
-            <p>Looking for a fun & active job? <a href="careers.html">Click HERE to apply</a></p>
+        <section class="banner-section">
+            <a href="careers.html">
+                <img src="images/ww-site-hiring-banner-resized.png" alt="We Want You - Now Hiring" class="responsive-banner">
+            </a>
+        </section>
+
+        <section class="content-block">
+            <div class="container">
+                <h2>Hands-On Teaching</h2>
+                <img src="images/home-hands-on-teaching.jpeg" alt="Instructor teaching child to swim" class="feature-image">
+                <p>We believe in a hands-on approach to ensure safety and skill mastery.</p>
+            </div>
+        </section>
+
+        <section class="locations-preview">
+            <div class="container">
+                <h2>Our Locations</h2>
+                <img src="images/home-our-locations-map.png" alt="Map of Splashes Locations" class="feature-image">
+                <div class="location-links">
+                    <a href="locations.html" class="btn btn-secondary">Find a Location Near You</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="images/logo.png" alt="Splashes Logo" width="100">
+        <div class="footer-content">
+            
+            <div class="footer-column logo-col">
+                <img src="images/footer-logo-wave-small.png" alt="Splashes Footer Logo" width="150">
+            </div>
+
+            <div class="footer-column links-col">
+                <nav class="footer-nav">
+                    <a href="about.html">About</a>
+                    <a href="locations.html">Locations</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="careers.html">Careers</a>
+                    <button class="btn btn-small">Register / Sign In</button>
+                </nav>
+            </div>
+
+            <div class="footer-column social-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">FB</a> <a href="#">IG</a> <a href="#">TW</a> <a href="#">YT</a>
+                </div>
+            </div>
+
+            <div class="footer-column contact-col">
+                <p><strong>Orange County:</strong> (949) 450-0777</p>
+                <p><strong>San Diego County:</strong> (760) 603-9400</p>
+                <p><strong>Los Angeles County:</strong> (626) 836-1200</p>
+                <p><strong>Northern California:</strong> (408) 279-1700</p>
+                <p><strong>Denver:</strong> (720) 344-7700</p>
+            </div>
         </div>
 
-        <div class="footer-links">
-            <a href="about.html">About</a> | 
-            <a href="locations.html">Locations</a> | 
-            <a href="faqs.html">FAQs</a> | 
-            <a href="contact.html">Contact</a> | 
-            <button>Register / Sign In</button> | 
-            <a href="careers.html">Careers</a>
+        <div class="partners-row">
+            <img src="images/sponsors/footer-usssa-logo-2.png" alt="US Swim School Association">
+            <img src="images/sponsors/footer-ndpa-logo.png" alt="National Drowning Prevention Alliance">
+            <img src="images/sponsors/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now">
+            <img src="images/sponsors/footer-member-issa-logo.png" alt="ISSA Member">
         </div>
 
-        <div class="social-media">
-            <span>[LinkedIn]</span>
-            <span>[Instagram]</span>
-            <span>[Twitter]</span>
-            <span>[Yelp]</span>
-            <span>[Facebook]</span>
-            <span>[YouTube]</span>
-        </div>
-
-        <div class="locations-info">
-            <p><strong>Orange County:</strong> (949) 450-0777</p>
-            <p><strong>San Diego County:</strong> (760) 603-9400</p>
-            <p><strong>Los Angeles County:</strong> (626) 836-1200</p>
-            <p><strong>Northern California:</strong> (408) 279-1700</p>
-            <p><strong>Denver:</strong> (720) 344-7700</p>
-        </div>
-
-        <div class="partners">
-            <span>[US Swim School]</span>
-            <span>[NDPA]</span>
-            <span>[Stop Drowning Now]</span>
-        </div>
-
-        <div class="copyright">
+        <div class="copyright-row">
             <p>&copy; 2022 Splashes. All Rights Reserved</p>
         </div>
     </footer>

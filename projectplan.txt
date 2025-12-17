@@ -1,0 +1,64 @@
+
+### **Phase 1: Project Plan**
+
+1. **Setup & Architecture (Current):** Create folder structure and blank HTML files for all pages.
+2. **MVP Structure (HTML5):**
+* Build the `index.html` with the main navigation and content placeholders.
+* Create the remaining 7 HTML pages with basic headers, footers, and "dumped" image assets.
+* Ensure all links work (navigation flow).
+
+
+3. **Styling (CSS3):**
+* Implement CSS Reset.
+
+
+* Create the global layout (flexbox/grid) for the sticky navbar and footer.
+* Apply typography and brand colors (from mocks).
+* Make layouts responsive for mobile (576px), tablet (768px), and desktop (1200px).
+
+
+
+
+4. **Functionality (JS/jQuery):**
+* Build the Register/Sign In Modal.
+
+
+* Implement sticky navigation behavior.
+* Layer in Bootstrap (if needed for grid/components) and final scripts.
+
+
+5. 
+**Testing & Review:** Test on different browsers and verify against mockups.
+
+
+
+---
+
+### **Phase 2: Architecture & File Structure**
+
+Based on your instructions for "separate folders," here is the directory tree we will use. This accounts for the 8 expected pages.
+
+```text
+/project-root
+  ├── /css
+  │     ├── reset.css
+  │     └── style.css
+  ├── /images
+  │     ├── logo.png
+  │     ├── hero-home.jpg
+  │     ├── banner-register.jpg
+  │     ├── banner-hiring.jpg
+  │     └── (other assets)
+  ├── /js
+  │     └── script.js
+  ├── index.html            (Home)
+  ├── about.html            (About)
+  ├── lessons.html          (Swimming Lessons)
+  ├── swim-programs.html    (Swim Programs)
+  ├── adult-programs.html   (Adult Programs)
+  ├── locations.html        (Locations)
+  ├── contact.html          (Contact Us)
+  ├── faqs.html             (FAQs - inferred from footer)
+  └── careers.html          (Careers - inferred from footer)
+
+```

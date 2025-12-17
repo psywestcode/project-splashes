@@ -1,103 +1,115 @@
-/* =========================================================
-   TOKENS & VARIABLES
-   ========================================================= */
+/* css/style.css */
+
+/* 1. LOCAL FONTS SETUP */
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('../Fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 400 700;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../Fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../Fonts/open-sans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Henny Penny';
+    src: url('../Fonts/Henny-Penny/HennyPenny-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* 2. VARIABLES */
 :root {
     --color-primary: #03B1F4;
     --color-dark-navy: #1A2E38;
     --color-text-main: #444444;
+    --color-text-secondary: #757576;
     --color-bg-light: #E4EAEA;
     --color-white: #FFFFFF;
-
-    /* Matching fonts available in your 'Fonts/' folder */
+    
     --font-heading: 'Bodoni Moda', serif;
     --font-body: 'Open Sans', sans-serif;
     --font-decorative: 'Henny Penny', cursive;
 }
 
+/* 3. BASE STYLES */
 body {
     font-family: var(--font-body);
     color: var(--color-text-main);
     line-height: 1.6;
     background-color: var(--color-white);
 }
-
 h1, h2, h3, h4, h5 {
     font-family: var(--font-heading);
     color: var(--color-dark-navy);
     font-weight: 700;
+    margin-bottom: 1rem;
 }
+a { color: var(--color-primary); transition: all 0.3s; }
+a:hover { text-decoration: none; color: var(--color-dark-navy); }
 
-/* UTILITY CLASSES */
-.bg-dark-navy { background-color: var(--color-dark-navy) !important; }
-.text-dark-navy { color: var(--color-dark-navy) !important; }
-.font-heading { font-family: var(--font-heading); }
-
-/* CUSTOM BUTTONS (Matches Style Guide) */
+/* 4. COMPONENTS */
 .btn-primary-pill {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: #fff;
     border-radius: 50px;
     padding: 10px 30px;
     font-weight: 600;
     border: 2px solid var(--color-primary);
-    transition: all 0.3s ease;
 }
-
 .btn-primary-pill:hover {
-    background-color: var(--color-white);
+    background-color: #fff;
     color: var(--color-primary);
     text-decoration: none;
 }
+.bg-dark-navy { background-color: var(--color-dark-navy) !important; }
+.text-dark-navy { color: var(--color-dark-navy) !important; }
 
-.btn-outline-pill {
-    background-color: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    border-radius: 50px;
-    padding: 10px 30px;
-    font-weight: 600;
-}
-
-.btn-outline-pill:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-/* NAVBAR TWEAKS */
+/* 5. LAYOUT */
+/* Navbar */
+.navbar-brand img { max-height: 60px; }
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255, 0.9);
+    color: rgba(255,255,255,0.9);
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--color-primary);
-}
+.navbar-dark .navbar-nav .nav-link:hover { color: var(--color-primary); }
 
-/* HERO SECTION */
-.hero-container {
-    max-height: 500px;
-    overflow: hidden;
+/* Hero */
+.hero-header {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
-.hero-img {
-    object-fit: cover;
-    object-position: center;
-    min-height: 300px;
+.hero-header::after {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(26, 46, 56, 0.4); /* Overlay for text readability */
+}
+.hero-header h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* FOOTER */
+/* Footer */
 footer {
     background-color: var(--color-dark-navy);
     color: #fff;
     border-top: 6px solid var(--color-primary);
 }
-footer a {
-    color: #fff;
-    opacity: 0.8;
-}
-footer a:hover {
-    color: var(--color-primary);
-    text-decoration: none;
-    opacity: 1;
-}
+footer h5 { color: var(--color-primary); }
+footer a { color: #fff; opacity: 0.8; }
+footer a:hover { opacity: 1; color: var(--color-primary); }

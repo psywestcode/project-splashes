@@ -1,0 +1,77 @@
+/* =========================================
+   1. CSS VARIABLES (Derived from Style Guide)
+   ========================================= */
+:root {
+    /* Colors */
+    --color-primary: #03B1F4;      /* Bright Blue for Buttons/Links */
+    --color-dark-navy: #1A2E38;    /* Dark Header/Footer Background */
+    --color-text-main: #444444;    /* Main Body Text */
+    --color-text-light: #757576;   /* Secondary Text */
+    --color-bg-light: #E4EAEA;     /* Light Grey Backgrounds */
+    --color-white: #FFFFFF;
+
+    /* Typography */
+    --font-heading: 'Bodoni Moda', serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-decorative: 'Henny Penny', cursive;
+}
+
+/* =========================================
+   2. GLOBAL TYPOGRAPHY
+   ========================================= */
+body {
+    font-family: --font-body; /* Fallback until var is applied below */
+    font-family: var(--font-body);
+    font-size: 16px; /* 1em as per guide */
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 700; /* Bold */
+    color: var(--color-dark-navy);
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 3em; } /* 48px - 72px scale */
+h2 { font-size: 2em; } /* 32px scale */
+h3 { font-size: 1.5em; }
+
+/* Decorative Font Class */
+.decorative-text {
+    font-family: var(--font-decorative);
+}
+
+/* =========================================
+   3. BUTTON STYLES (From Guide)
+   ========================================= */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px; /* Pill shape */
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/* "Static" State - Blue Background */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+/* "Inactive" or Secondary State */
+.btn-secondary {
+    background-color: var(--color-bg-light);
+    color: var(--color-white);
+}

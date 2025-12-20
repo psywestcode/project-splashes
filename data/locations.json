@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "region": "Orange County",
+    "phone": "(949) 450-0777",
+    "cities": ["Irvine", "Huntington Beach", "Anaheim Hills", "Yorba Linda", "Laguna Hills"]
+  },
+  {
+    "id": 2,
+    "region": "San Diego County",
+    "phone": "(760) 603-9400",
+    "cities": ["Carlsbad", "Poway", "San Diego"]
+  },
+  {
+    "id": 3,
+    "region": "Los Angeles County",
+    "phone": "(626) 836-1200",
+    "cities": ["Pasadena", "West Covina", "Santa Monica"]
+  },
+  {
+    "id": 4,
+    "region": "Northern California",
+    "phone": "(408) 279-1700",
+    "cities": ["San Jose", "San Francisco", "Sunnyvale"]
+  },
+  {
+    "id": 5,
+    "region": "Denver",
+    "phone": "(720) 344-7700",
+    "cities": ["Highlands Ranch", "Denver Central"]
+  }
+]
